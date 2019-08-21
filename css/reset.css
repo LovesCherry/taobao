@@ -1,0 +1,68 @@
+/* 重置规则 需要用到的标签以及标签自身有的样式才重置 */
+body,p,h1,h2,h3,h4{
+    margin: 0;
+}
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;    
+}
+/* 在IE中会显示出来，别的不会 */
+img{
+    border: none;
+    vertical-align: middle;
+}
+a{
+    text-decoration: none;
+    color: #3c3c3c;
+}
+i{
+    font-style: normal;
+}
+input{
+    margin: 0;
+    padding: 0;
+}
+button{
+ /* 相当于border*/
+    outline: none;
+}
+body{
+    /* font是合并属性 字体大小/行高1.5/字体 \5b58是unicode*/
+    font: 12px/1.5 tahoma,arial,'Hiragino Sans GB','\5b8b\4f53'sans-serif;
+    color: #3c3c3c;
+    background-color: #f4f4f4;
+}
+/* 目的是清除浮动流 */
+.clearfix::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+.leayer{
+    /*  */
+    width: 1190px;
+    /* auto自动化的 */
+    margin: 0 auto;
+}
+.c4{
+    color: #f40;
+}
+.c5{
+    color:#f50;
+}
+.mt10{
+    margin-top: 10px;
+}
+.mr10{
+    margin-right: 10px;
+}
+.m10{
+    margin-top: 10px;
+}
